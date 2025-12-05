@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Africa App Store</title>
+
+<!-- TailwindCSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    body { background-color: #000000; }
+    .electric-green { color: #00ff88; }
+    .electric-green-bg { background-color: #00ff88; }
+</style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen p-6">
+
+    <div class="text-center">
+
+        <!-- Logo -->
+        <img src="app.jpg" alt="Africa App Store Logo"
+             class="w-80 h-80 mx-auto rounded-xl shadow-lg shadow-emerald-500">
+
+        <!-- Title -->
+        <h1 class="text-4xl font-bold electric-green mt-6">
+        </h1>
+
+        <p class="text-gray-300 mt-4 text-lg">
+            Powered by <span class="electric-green">BlackLogic Technologies</span>
+        </p>
+
+        <p class="text-gray-400 mt-2 max-w-md mx-auto">
+            Explore the top 5 apps built by BlackLogic in 2025.
+        </p>
+
+<!-- Explore Button (centered & linked) -->
+<div class="flex justify-center">
+    <a href="dashboard.html">
+        <button
+            class="mt-8 px-10 py-3 rounded-xl electric-green-bg text-black font-bold 
+                   hover:scale-105 transition-all duration-300 shadow-lg shadow-emerald-500/40">
+            Explore
+        </button>
+    </a>
+</div>
+    </div>
+
+<script>
+/* -------------------------------
+   Explore → Dashboard (No login)
+--------------------------------*/
+document.getElementById("exploreBtn").onclick = () => {
+    window.location.href = "dashboard.html";
+};
+</script>
+
+</body>
+</html>

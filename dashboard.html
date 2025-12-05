@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Africa App Store – Dashboard</title>
+
+<!-- TailwindCSS 2.2 CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #000000, #001f3f, #007bff);
+      color: white;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    }
+
+</style>
+</head>
+
+<body class="relative">
+
+<!-- ================= HEADER =================== -->
+<header class="w-full flex items-center justify-between px-6 py-4 bg-black border-b border-emerald-500">
+    <h1 class="text-2xl font-bold text-emerald-400">Africa App Store</h1>
+
+    <button onclick="toggleMenu()" class="text-white text-3xl">
+        <i class="fas fa-bars"></i>
+    </button>
+</header>
+
+<!-- ================= SIDEBAR =================== -->
+<div id="sidebar" 
+    class="fixed left-0 top-0 h-full w-64 bg-gray-900 text-white transform -translate-x-full 
+           transition-transform duration-300 shadow-xl z-50">
+
+    <div class="p-6 border-b border-gray-700">
+        <h2 class="text-xl font-bold text-emerald-400">Menu</h2>
+    </div>
+
+    <nav class="p-4 space-y-4">
+    
+        <a href="terms.html" class="block text-gray-300 hover:text-emerald-400">
+            <i class="fas fa-file-contract mr-2"></i> License & Terms
+        </a>
+        <a href="privacy.html" class="block text-gray-300 hover:text-emerald-400">
+            <i class="fas fa-shield-alt mr-2"></i> App Privacy
+        </a>
+        <a href="about.html" class="block text-gray-300 hover:text-emerald-400">
+            <i class="fas fa-users mr-2"></i> About Us
+        </a>
+        <a href="updates.html" class="block text-gray-300 hover:text-emerald-400">
+            <i class="fas fa-sync mr-2"></i> Updates
+        </a>
+    </nav>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" 
+     class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"
+     onclick="toggleMenu()">
+</div>
+
+<!-- ================= BANNER =================== -->
+<div class="w-full" style="height: 300px;">
+    <img src="emoji.jpg" alt="Banner" class="w-full h-full object-cover">
+</div>
+
+<!-- ================= GRID TITLE =================== -->
+<h2 class="text-3xl font-bold text-emerald-400 text-center mt-8 mb-6">
+    Top 5 Apps
+</h2>
+
+<!-- ================= APP GRID =================== -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 pb-20">
+
+    <!-- AfricaCareer -->
+    <div class="bg-gray-900 rounded-xl p-6 shadow-lg border border-emerald-400">
+        <img src="Africa.jpg" class="w-full h-60 object-contain mx-auto mb-4" alt="AfricaCareer Logo">
+        <h3 class="text-xl font-bold text-white">AfricaCareer</h3>
+        <p class="text-gray-400">Career Platform</p>
+        <a href="https://blacklogic-dev.github.io/AfricaCareer/"
+           class="mt-4 inline-block px-5 py-2 bg-emerald-400 text-black font-bold rounded-lg hover:scale-105 transition">
+           Open App
+        </a>
+    </div>
+
+    <!-- BlackLogic Technologies -->
+    <div class="bg-gray-900 rounded-xl p-6 shadow-lg border border-emerald-400">
+        <img src="Blacklogic.png" class="w-full h-64 object-contain mx-auto mb-4" alt="BlackLogic Logo">
+        <h3 class="text-xl font-bold text-white">Blacklogic Technologies</h3>
+        <p class="text-gray-400">Company App</p>
+        <a href="https://blacklogic-dev.github.io/BlacklogicTech/"
+           class="mt-4 inline-block px-5 py-2 bg-emerald-400 text-black font-bold rounded-lg hover:scale-105 transition">
+           Open App
+        </a>
+    </div>
+
+    <!-- Mamzo Lifestyles -->
+    <div class="bg-gray-900 rounded-xl p-6 shadow-lg border border-emerald-400">
+        <img src="mamzo.jpg" class="w-full h-64 object-contain mx-auto mb-4" alt="Mamzo Logo">
+        <h3 class="text-xl font-bold text-white">Mamzo Lifestyle’s</h3>
+        <p class="text-gray-400">Food Delivery App</p>
+        <a href="https://blacklogic-dev.github.io/MamzoLife/"
+           class="mt-4 inline-block px-5 py-2 bg-emerald-400 text-black font-bold rounded-lg hover:scale-105 transition">
+           Open App
+        </a>
+    </div>
+
+    <!-- Mkholo Ecosystem -->
+    <div class="bg-gray-900 rounded-xl p-6 shadow-lg border border-emerald-400">
+        <img src="mkholo.png" class="w-full h-64 object-contain mx-auto mb-4" alt="Mkholo Logo">
+        <h3 class="text-xl font-bold text-white">Mkholo Ecosystem</h3>
+        <p class="text-gray-400">Construction App</p>
+        <a href="https://blacklogic-dev.github.io/MkholoEco/"
+           class="mt-4 inline-block px-5 py-2 bg-emerald-400 text-black font-bold rounded-lg hover:scale-105 transition">
+           Open App
+        </a>
+    </div>
+
+    <!-- IT VIBES -->
+    <div class="bg-gray-900 rounded-xl p-6 shadow-lg border border-emerald-400 col-span-1 md:col-span-2">
+        <img src="vibeit.jpg" class="w-full h-64 object-contain mx-auto mb-4" alt="IT Vibes Logo">
+        <h3 class="text-xl font-bold text-white">IT VIBES</h3>
+        <p class="text-gray-400">Tech Learning App</p>
+        <a href="https://blacklogic-dev.github.io/ITVIBEZ/"
+           class="mt-4 inline-block px-5 py-2 bg-emerald-400 text-black font-bold rounded-lg hover:scale-105 transition">
+           Open App
+        </a>
+    </div>
+
+</div>
+
+<script>
+function toggleMenu() {
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+
+    const isClosed = sidebar.classList.contains("-translate-x-full");
+
+    if (isClosed) {
+        sidebar.classList.remove("-translate-x-full");
+        overlay.classList.remove("hidden");
+    } else {
+        sidebar.classList.add("-translate-x-full");
+        overlay.classList.add("hidden");
+    }
+}
+</script>
+
+</body>
+</html>

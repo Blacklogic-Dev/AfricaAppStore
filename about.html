@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About – Africa App Store</title>
+
+<!-- TailwindCSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; /* black background */
+    color: #fff;
+}
+
+.text-emerald {
+    color: #00ff88;
+}
+
+.card {
+    background: #111;
+    border: 1px solid #00ff88;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0, 255, 136, 0.3);
+}
+
+.card img {
+    height: 250px;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.stars i {
+    color: #00ff88;
+}
+</style>
+</head>
+
+<body class="text-white">
+
+<!-- HEADER -->
+<header class="w-full px-6 py-4 border-b border-emerald-400 flex items-center justify-between">
+    <h1 class="text-2xl font-bold text-emerald-400">About Us</h1>
+    <a href="dashboard.html" class="text-white hover:text-emerald-400 text-xl">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+</header>
+
+<div class="max-w-5xl mx-auto px-6 py-10">
+
+    <h2 class="text-3xl font-bold text-emerald-400 text-center mb-10">
+        Meet Our Team & Credentials
+    </h2>
+
+    <!-- GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- 1. BlackLogic Technologies -->
+        <div class="card flex flex-col items-center">
+            <h3 class="text-xl font-bold text-emerald-400 mb-4">BlackLogic Technologies</h3>
+            <img src="CIPC.jpg" alt="BlackLogic Certificate">
+            <p class="text-gray-300 text-center mt-2">
+                Official registration certificate with CIPC number. <br>
+                Directors: 2 | <i class="fas fa-building"></i> CIPC verified
+            </p>
+            <div class="stars mt-4">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <!-- 2. BlackLogic Mkholo -->
+        <div class="card flex flex-col items-center">
+            <h3 class="text-xl font-bold text-emerald-400 mb-4">BlackLogic Mkholo</h3>
+            <img src="mee.jpg" alt="Mthokozisi Certificate">
+            <p class="text-gray-300 text-center mt-2">
+                AI Software & Cloud Engineer <br>
+                2 Years Professional Experience
+            </p>
+            <div class="stars mt-4">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <!-- 3. Quinn Asanda -->
+        <div class="card flex flex-col items-center">
+            <h3 class="text-xl font-bold text-emerald-400 mb-4">Quinn Asanda</h3>
+            <img src="hee.jpg" alt="Quinn Certificate">
+            <p class="text-gray-300 text-center mt-2">
+                AI Designer & UX/UI Practitioner <br>
+                2 Years Experience
+            </p>
+            <div class="stars mt-4">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
